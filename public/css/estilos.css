@@ -55,10 +55,10 @@ a {
 
 .ubicacion p {
     color: var(--blanco);
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 .logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: "Rubik Scribble";
     font-weight: 700;
     font-style: italic;
@@ -70,28 +70,28 @@ a {
 }
 span{
     font-weight:  bold;
-    color: rgb(10, 6, 233);   
+    color: rgb(135, 233, 6);   
 }
 .usuario-carrito {
     display: flex;
     gap: 2rem;
     justify-content: center;
     align-items: center;
-    /*height: 3.5rem;
-    width: 3.5rem;
+    /*height: 5rem;
+    width: 5rem;
     border-radius: 50%;*/
-
 }
 
 .fa-cart-shopping{
     cursor: pointer;
     color: var(--blanco);
     transition: all .3s ease;
-   /* height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
     border-radius: 50%;
     align-items: center;
-    justify-content: center;*/
+    justify-content: center;
+    font-size: 2rem;
 }
 
 .fa-user{
@@ -99,6 +99,12 @@ span{
     color: var(--blanco);
     transition: all .3s ease;
     margin-right: 2rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
 }
 
 
@@ -122,7 +128,7 @@ span{
 }
 
 main {
-    background-image: url(/imagenes/comercio.jpg);
+    background-image: url(/public/imagenes/comercio.jpg);
     height: 30rem;
     width:  100%;
     background-repeat: no-repeat;
@@ -150,7 +156,11 @@ main {
 }
 .productos-descripcion h3 p {
     font-size: 0.8rem;
-    
+}
+
+.productos-descripcion img:hover {
+    transform: scale(1.4);
+    transition: all 0.5s;
 }
 
 .agregarAlCarrito {
@@ -180,32 +190,42 @@ main {
 }
 
 .footer {
-    background-color: var(--fondo-redes);
-    display: flex;
-    justify-content: space-evenly;
-    height: 3rem;
+    background-color: var(--fondo-barra);
+    display: block;
+    text-align: center;
+    height: 10rem;
     align-items: center;
+    /*padding: 7rem;*/
+    margin: 2rem;
 }
 .redesSociales {
     display: flex;
-    justify-content: left;
+    /*justify-content: center;*/
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
     flex-direction: row;
-    gap: 1rem;
-    padding: 2rem auto;
+    gap: 3rem;
+    padding: 2rem ;
 
 }
 
 .fa-facebook {
-    color: rgb(0, 89, 255)
+    color: rgb(218, 219, 221);
+    font-size: 2rem;
 }
+
 .fa-square-instagram {
-    color:deeppink
+    color:rgb(231, 33, 139);
+    font-size: 2rem;
 }
 .fa-whatsapp {
+    font-size: 2rem;
     color: rgb(0, 252, 42);
 }
 .fa-envelope {
-    color: dodgerblue;
+    font-size: 2rem;
+    color: rgb(196, 224, 35);
 }
 
 /**********Medias Query*************/
@@ -224,7 +244,7 @@ main {
     .navegacion a:hover{
         background-color: var(--boton-hover);
         padding: 0.5rem;
-        font-size: 2rem;
+        font-size: 3rem;
     }
     
     .navegacion{
@@ -258,7 +278,8 @@ section h2{
     background-color: var(--gris);
     width: min( 60rem, 100%);/*Utiliza el valor mas pequeño**/
     margin: 0 auto;
-    padding: 2rem;
+    padding: 3rem;
+    
 }
 .formulario fieldset{
     border: none;
